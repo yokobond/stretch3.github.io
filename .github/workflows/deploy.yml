@@ -117,6 +117,12 @@ jobs:
           repository: yokobond/xcx-gai
           ref: stretch3
           path: ./xcx-gai
+      - uses: actions/checkout@v4
+        with:
+          repository: yokobond/xcx-colorx
+          ref: stretch3
+          path: ./xcx-colorx
+      - run: sh ./xcx-colorx/scripts/stretch3-install.sh
       - run: sh ./xcx-arduino/scripts/stretch3-install.sh
       - run: sh ./xcx-webapi/scripts/stretch3-install.sh
       - run: sh ./xcx-screenshot/scripts/stretch3-install.sh
